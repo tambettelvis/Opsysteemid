@@ -1,23 +1,29 @@
-#Failisüsteemi paigutus mälus - operatsioonisüsteemide kodutöö 4
+# FailisÃ¼steemi paigutus mÃ¤lus - operatsioonisÃ¼steemide kodutÃ¶Ã¶ 4
 
-###Kirjeldus
-Failisüsteemi ühetasemelise indekseeritud paigutuse visualeering.
+### Kirjeldus
 
-###Kasutus
+FailisÃ¼steemi Ã¼hetasemelise indekseeritud paigutuse visualeering.
+
+### Kasutus
+
 OpSysKodu4.jar
 
-###Java version
+### Java version
+
 1.8
 
-###Kasutatud moodulid
+### Kasutatud moodulid
+
 JavaFX
 
-###Autor
+### Autor
+
 Tambet-Telvis Tanilsoo
 
-###Küsimus
-* Kui suur protsent allesjäänud failidest on fragmenteerunund (koosnevad rohkem kui ühest fragmendist)?
+### KÃ¼simus
+
+* Kui suur protsent allesjÃ¤Ã¤nud failidest on fragmenteerunund (koosnevad rohkem kui Ã¼hest fragmendist)?
 * Kui suur protsent kasutatud ruumist kuulub fragmenteerunud failidele?
 
-Kummal viisil mõõdetud fragmenteeritus on pöörleva ketta jõudluskao iseloomustamiseks mõistlikum (põhjenda)?
-Esimene(fragmenteerunud failide osa kogu failidest), sest annab täpsema info, kui suurel osal failidest ketasel on jõukadu. Teise puhul võib tekkida situatsioon, kus ühe või väheste fragmenteeritud failide suurus võtab enamik osa mälust, kuigi mitte-fragmenteerunud failide arv on suurem ning tulemuses näib, et jõukadu on suurem. 
+Kummal viisil mÃµÃµdetud fragmenteeritus on pÃ¶Ã¶rleva ketta jÃµudluskao iseloomustamiseks mÃµistlikum (pÃµhjenda)?
+Esimene(fragmenteerunud failide osa kogu failidest), sest annab tÃ¤psema info, kui suurel osal failidest ketasel on jÃµukadu. Teise puhul vÃµib tekkida situatsioon, kus Ã¼he vÃµi vÃ¤heste fragmenteeritud failide suurus vÃµtab enamik osa mÃ¤lust, kuigi mitte-fragmenteerunud failide arv on suurem ning tulemuses nÃ¤ib, et jÃµukadu on suurem. 
