@@ -1,0 +1,12 @@
+
+GridPane {
+	-fx-vgap: 10;	
+}
+
+#descLabel{
+	-fx-font-size: 15px;
+}
+
+.text-field{
+	-fx-width: 20px;
+}

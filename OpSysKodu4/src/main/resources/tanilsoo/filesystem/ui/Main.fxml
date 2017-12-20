@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.ToggleGroup?>
+
+<BorderPane fx:id="mainPanel" xmlns:fx="http://javafx.com/fxml/1">
+	<center>
+	<GridPane fx:id="gridPanel">
+	
+		<padding><Insets left="10.0" top="10.0"/></padding>
+		<fx:define>
+	        <ToggleGroup fx:id="inputToggleGroup"/>
+	    </fx:define>
+		<Label fx:id="descLabel" text="Vali või sisesta järjend (kujul A,2;B,3;A,-;C,4). Max 10 faili." GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="2"/>
+		<RadioButton fx:id="rb1" text="Esimene" selected="true" toggleGroup="$inputToggleGroup" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+		<Label fx:id="patternLabel1" text="A,2;B,3;A,-;C,4;D,5;B,-;E,5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+		<RadioButton fx:id="rb2" text="Teine" toggleGroup="$inputToggleGroup" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+		<Label fx:id="patternLabel2" text="A,4;B,3;C,6;D,5;B,-;E,5;A,-;F,10" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+		<RadioButton fx:id="rb3" text="Kolmas" toggleGroup="$inputToggleGroup" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+		<Label fx:id="patternLabel3" text="A,2;B,3;C,4;D,5;B,-;E,7;D,-;F,10;A,-;G,1;H,1;G,-;I,10;J,8;I,-" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+		<RadioButton fx:id="rb4" text="Enda oma" toggleGroup="$inputToggleGroup" GridPane.columnIndex="0" GridPane.rowIndex="5" />
+		<TextField fx:id="userPatternField" maxWidth="200" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+		<Button fx:id="startButton" text="Käivita" onAction="#startButtonClicked" GridPane.columnIndex="0" GridPane.rowIndex="6" />
+		<Button fx:id="clearButton" text="Puhasta väljund" onAction="#clearButtonClicked" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+		
+	</GridPane>
+	</center>
+	<right>
+		<VBox>
+			<Label text="Arvutused"/>
+			<TextArea fx:id="solutionTextArea" />
+		</VBox>
+	</right>
+</BorderPane>
+
